@@ -1,0 +1,81 @@
+
+h1 {
+    padding-left: 200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#exampleInputUsername1{
+    width:300px;
+    border-radius: 80px;
+    margin-left: 110px;
+}
+
+#exampleInputEmail1{
+    width:300px;
+    border-radius: 80px;
+    right:80px;
+    margin-left: 110px;
+}
+
+#exampleInputPassword1{
+    width:300px;
+    border-radius: 80px;
+    margin-left: 110px;
+}
+
+
+#button{
+    width:140px;
+    height:35px;
+    border-radius:40px;
+    border:1px solid grey;
+    color:white;
+    background-color: rgba(0, 68, 255, 0.945);
+    margin-left:200px;
+    margin-bottom: 20px;
+}
+
+p{
+    padding-left: 125px;
+}
+
+
+#fb{
+    width: 40px;
+    height: 40px;
+}
+
+#google{
+    width: 40px;
+    height: 40px;
+}
+
+#linkedin{
+    width: 40px;
+    height: 40px;
+}
+
+#twitter{
+    width: 40px;
+    height: 40px;
+}
+
+#logos{
+    margin-left: 180px;
+}
+
+#lady{
+    width:525px;
+    height: 500px;
+    float: right;
+    padding-top: 60px;
+}
+#col1{
+    float: left;
+    margin-left: auto;
+}
+
+#col2{
+    float: top;
+}
