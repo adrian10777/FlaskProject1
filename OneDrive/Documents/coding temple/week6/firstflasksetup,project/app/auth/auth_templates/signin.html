@@ -1,0 +1,28 @@
+{% extends 'components/layout.html' %}
+<!-- referencing one html file from another, this is our relative file locations, -->
+<!-- we should be able to go extend straight into components/layout.html, this is because although our blueprint is modularized from our application, its still part of our applciation or our application is responsible for opening it-->
+<!-- so when we put 'components/layout.html'flaks is going to go and look at auth templates, and if it cant find it there itll look in th enormal templates folder and find it there-->
+{% block title %}Sign in{% endblock title %}
+
+{% block content %}
+<div class="row justify-content-center mt-2">
+    <div class="col-6">
+        <h3>Login</h3>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                <fieldset id="username-field">
+                    {{ form.username.label }}
+                    {{ form.username(class="form-control", placeholder="Username...") }}
+                </fieldset>
+                <fieldset id="password-field">
+                    {{ form.password.label }}
+                    {{ form.password(class="form-control", placeholder="Password...") }}
+                </fieldset>
+                <br>
+                {{ form.submit(class="btn btn-block btn-info") }}
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

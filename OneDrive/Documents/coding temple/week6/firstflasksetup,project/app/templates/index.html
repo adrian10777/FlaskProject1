@@ -1,6 +1,46 @@
-<h1>Hello,World</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aut illum voluptas recusandae vel, delectus corrupti similique libero dolorum molestiae non accusantium, quod, pariatur incidunt a ipsa nesciunt. Incidunt, iusto!</p>
-<h5>Favorite</h5>
-{% for p in players %}
-    <h5>{{p}}</h5>
-{% endfor %} <!--end for loop-->
+{% extends 'components/layout.html' %} 
+<!-- this is saying that when index.html pg is loaded it should be loaded as a subsection of the layout pg-->
+
+{% block title %}Homepage{% endblock title %}
+<!--when we load to index.html pg it will load full layout pg with home pg placed within the block title in layout pg-->
+
+{% block content %}
+<img src="../static/images/picture-of-me-nutritionsda.jpg" alt="picture of Adrian" id="picmehomepage">
+<h5 class="title1"><b>YOUR NUTRITION REFORMATION</b></h5>
+<p id="p1"><b>Hey! My name is Adrian Henriquez, I am the founder of SDA <br> Nutrition, a Registered Dietetic Technician, and a Certified LEAP <br> Therapist. My goal is to assist you in achieving your optimal <br> lifestyle, and reforming your health by utilizing the best proven <br> method which is to be on a Whole Foods vegan diet, so you can thrive!</b></p>
+<button type="submit" class="btn-btn-primary1">Let's Talk</button>
+<h6 id="p2"><b>Are you exhausted with all the confusion? Are you tired of being sick and lethargic? not sure what to eat to be your best self? Your answers are a click away!</b></h6>
+<h6 id="title2"><b>DONT WANT TO WAIT?</b></h6>
+<!-- use css before " to center button-->
+<i class="fa fa-hand-o-down" style="font-size:48px;color:#43ace8; padding-left: 590px; padding-top: 25px; padding-bottom: 15px;"></i> 
+<button type="submit" class="btn-btn-primary2">Services</button>
+
+<!-- use bootstrap to align text with img, img with img, if we want img left and text right, 
+we can make bootstrap contianer with row, the row will have 2 columns 1 column has img other has text
+
+-->
+
+<!-- form-->
+<div class="formthree ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"> <label class="sr-only">Name</label> <input type="text" class="form-control" required="" id="nameSix" placeholder="Your Name"> </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"> <label class="sr-only">Email</label> <input type="email" class="form-control" required="" id="emailSix" placeholder="Email Address"> </div>
+                        </div>
+                    </div>
+                    <!--end of /.row-->
+                    <div class="form-group"> <label class="sr-only">Message</label> <textarea class="form-control" required="" rows="7" placeholder="Write Message"></textarea> </div> 
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div> <!-- /.col-md-8 -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</div>
+<!-- form-->
+{% endblock content %}
